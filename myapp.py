@@ -1,8 +1,11 @@
+import nltk
+nltk.download('Stopwords')
+
 import streamlit as st
-import pandas as pd
 import pickle
 from nltk.corpus import stopwords
 from nltk.stem import SnowballStemmer
+
 
 tf_transformer = pickle.load(open('./transformModel_tf_transformer.pkl', 'rb'))
 vcModel = pickle.load(open('./transformModel_vcModel.pkl', 'rb'))
