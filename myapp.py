@@ -2,6 +2,8 @@ import streamlit as st
 import pickle
 from nltk.corpus import stopwords
 from nltk.stem import SnowballStemmer
+import nltk
+nltk.download('stopwords')
 
 
 tf_transformer = pickle.load(open('./transformModel_tf_transformer.pkl', 'rb'))
